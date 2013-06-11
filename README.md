@@ -12,7 +12,7 @@ This is a work-in-progress document which can be updated every time. You're welc
     * [directory](#directory)
     * [code](#code)
       * [logical paragraphs](#logical_paragraphs)
-      * [class names](#class)
+      * [class names](#class_names)
       * [variables](#variables)
       * [functions](#functions)
       * [extending](#extending)
@@ -24,11 +24,11 @@ This is a work-in-progress document which can be updated every time. You're welc
 
 #Starting
 * SASS is the prefered syntax
-* indentation is 2 spaces
-* leave always the code better off than when you started
-* be consistent to yourself
+* Indentation is always 2 spaces
+* Leave always the code better off than when you started
+* Be consistent to yourself
 * DRY
-* if the code violates against the style guide, clean up it
+* If the code violates against the style guide, clean up it
  * it takes less than ~1h
  * only when you are not behind your task
 
@@ -57,9 +57,9 @@ Example:
  +-ie9.css.sass
  +-print.css.sass
 ```
-##code
-###logical paragraphs
-* logical paragraphs should be grouped e.g.
+##Code
+###Logical Paragraphs
+* Logical paragraphs should be grouped e.g.
 ```
 .some-class
   @extend .bold
@@ -76,16 +76,16 @@ Example:
     @extend .headline-space
 ```
 
-###class
-* classes are always hyphens ```.i-love-hyphens-class-names```
+###Class Names
+* Classes are always hyphens ```.i-love-hyphens-class-names```
 
-###variables
-* variables are always underscore ```$grey_dark: #333333```
-* create files which are for the main configurations e.g.
+###Variables
+* Variables are always underscore ```$grey_dark: #333333```
+* Create partials which are for the main configurations e.g.
  * ```_grid``` which contains informations for the grid
- * ```_colors``` which contains all informations for the colors
- * ```_sizes``` which contains all widht, font-sizes, etc.
-* add variables which will be repeated before the class names
+ * ```_colors``` which contains all the colors
+ * ```_sizes``` which contains all width, font sizes, etc.
+* Add variables which will be repeated before the class names
 
 ```sass
 $country_select_width: 180px
@@ -101,6 +101,7 @@ $country_select_width: 180px
     border: 2px solid $white
     background: $white    
 ```
+
 ```sass
 // Yes
 $grey           : #666666
@@ -114,8 +115,8 @@ $grey_dark: #333333
 
 ```
 
-###functions
-* function names are always underscore
+###Functions
+* Function names are always underscore
 * use ```=``` instead of ```@mixin```
 * use ```+``` instead of ```@include```
 
@@ -128,15 +129,15 @@ $grey_dark: #333333
 @mixin icons-sprite($name, $x: 0, $y: 0)
   @include retina-sprite($name, $x, $y, $sprites, $sprites2x)
 ```
-###extending
-* never extend something that is already using an ```@extend```
-* if using extend on selection deep on page or more than ```4 or 5``` times on the site, create a ```mixin```
+###Extending
+* Never extend something that is already using an ```@extend```
+* If using extend on selection deep on page or more than ```4 or 5``` times on the site, create a ```mixin```
 
-###sprites
-* use the [sprites](http://compass-style.org/reference/compass/utilities/sprites/) generator of compass
+###Sprites
+* Use the [sprites](http://compass-style.org/reference/compass/utilities/sprites/) generator of compass
 
-###comments
-* file header
+###Comments
+* File header
 
 ```sass
 // ****************************************************************
@@ -144,7 +145,7 @@ $grey_dark: #333333
 // *  @description css helper classes
 // ****************************************************************
 ```
-* inline
+* Inline
 
 ```sass
 // * Reset
@@ -154,7 +155,7 @@ header
   min-width: inherit
   height: 100%
 ```
-* functions description
+* Functions description
 
 ```sass
 /****************************************************************/
@@ -166,7 +167,7 @@ header
 =icons-sprite($name, $x: 0, $y: 0)
   +retina-sprite($name, $x, $y, $sprites, $sprites2x)
 ```
-###annotations
+###Annotations
 * TODO: describe missing functionality that should be added at a later date
 * FIXME: describe broken code that must be fixed
 * OPTIMIZE: describe code that is inefficient and may become a bottleneck
@@ -174,7 +175,7 @@ header
 * REVIEW: describe code that should be reviewed to confirm implementation
 
 #Extensions
-* feel free to use helper which makes your life easier
+* Feel free to use helper which makes your life easier
 * [Compass](http://compass-style.org/)
 * [Breakpoint](http://breakpoint-sass.com/)
 
