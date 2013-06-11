@@ -50,12 +50,12 @@ Example:
    +-_mixins.css.sass
    +-_sprites.css.sass
  
- +-application.css.sass
- +-ie.css.sass
- +-ie7.css.sass
- +-ie8.css.sass
- +-ie9.css.sass
- +-print.css.sass
+ +-application.sass
+ +-ie.sass
+ +-ie7.sass
+ +-ie8.sass
+ +-ie9.sass
+ +-print.sass
 ```
 ##Code
 ###Logical Paragraphs
