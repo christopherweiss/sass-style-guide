@@ -33,7 +33,7 @@ This is a work-in-progress document which can be updated every time. You're welc
  * only when you are not behind your task
 
 #Structure
-##directory
+##Directory
 The files are in the ```$ASSETS_DIR/stylesheets``` and you have always a application.sass which controlls the includes.
 The ```application``` directory contains all files which you are including in the ```application.sass```. The partials folder can contain folders like libs or something you want. Fundamental layouts and styles go in ```application/general```.
 
