@@ -1,4 +1,4 @@
-sass-style-guide
+SASS Style Guide
 ================
 
-Best-practices and coding conventions for the sass programming language
+Best-practices and coding conventions for the SASS programming language.
