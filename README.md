@@ -163,7 +163,7 @@ header
 /* @param {integer} - x axis
 /* @param {integer} - y axis
 /****************************************************************/
-@mixin icons-sprite($name, $x: 0, $y: 0)
+=icons-sprite($name, $x: 0, $y: 0)
   +retina-sprite($name, $x, $y, $sprites, $sprites2x)
 ```
 ###annotations
