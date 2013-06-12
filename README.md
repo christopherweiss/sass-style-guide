@@ -8,11 +8,17 @@ This is a work-in-progress document which can be updated every time. You're welc
 # Table of Contents
 
 * [The SASS Style Guide](#starting)
+  * [Starting](#starting)
+     * [Warmup](#warmup)
+     * [Tabs or Spaces?](#tabs-or-spaces)
+     * [Maximum Line Length](#maximum-line-length)
+     * [Blank Lines](#blank-lines)
+     * [Trailing Whitespace](#trailing-whitespace)
   * [Structure](#structure)
     * [Directory](#directory)
     * [Code](#code)
-      * [Logical Paragraphs](#logical_paragraphs)
-      * [Class Names](#class_names)
+      * [Logical Paragraphs](#logical-paragraphs)
+      * [Class Names](#class-names)
       * [Variables](#variables)
       * [Functions](#functions)
       * [Extending](#extending)
@@ -23,8 +29,8 @@ This is a work-in-progress document which can be updated every time. You're welc
     * [Inspiration](#inspiration)
 
 #Starting
+## Warmup
 * SASS is the prefered syntax
-* Indentation is always 2 spaces
 * Leave always the code better off than when you started
 * Be consistent to yourself
 * DRY
@@ -32,6 +38,25 @@ This is a work-in-progress document which can be updated every time. You're welc
  * it takes less than ~1h
  * only when you are not behind your task
 
+## Tabs or Spaces
+* Spaces instead of tabs!
+* Indentation is always 2 spaces
+
+## Maximum Line Length
+
+Limit all lines to a maximum of 79 characters.
+
+## Blank Lines
+
+Separate top-level function and class definitions with a single blank line.
+
+Separate method definitions inside of a class with a single blank line.
+
+Use a single blank line within the bodies of methods or functions in cases where this improves readability (e.g., for the purpose of delineating logical sections).
+
+## Trailing Whitespace
+
+Do not include trailing whitespace on any lines.
 #Structure
 ##Directory
 The files are in the ```$ASSETS_DIR/stylesheets``` and you have always a application.sass which controlls the includes.
